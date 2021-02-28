@@ -20,7 +20,7 @@ let weather = {
     document.querySelector(".city").innerText = "Weather in " + name;
     document.querySelector(".temp").innerText = temp + "°C";
     document.querySelector(".icon").src =
-      "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+      "https://openweathermap.org/img/wn/" + icon + "@2x.png";
     document.querySelector(".description").innerText = description;
     document.querySelector(".humidity").innerText =
       "Humidity: " + humidity + "%";
