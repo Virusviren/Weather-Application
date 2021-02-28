@@ -7,13 +7,9 @@ let weather = {
         city +
         "&units=metric&appid=" +
         this.apiKey
-    ).then((response) => {
-      if (response != 404) {
-        response.json().then((data) => this.displayWeather(data));
-      } else {
-        console.log("Error");
-      }
-    });
+    )
+      .then((response) => response.json())
+      .then((data) => this.displayWeather(data));
   },
   displayWeather: function (data) {
     const { name } = data;
